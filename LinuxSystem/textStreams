@@ -1,0 +1,14 @@
+using the /etc/group file for example
+
+head /etc/group - will print only the first 10 lines of a file
+tail - will print the last 10 lines
+the /etc/group file is built like this:
+eran:x:1001: - first a group name then a colon, an x, another colon, and the group number. if i want to pull out one field of data from each line and process them all together.
+for that we will use cut
+cut -d:(field delimiter, every appearence of a colon as the end of one field and the beginning of another) -f3(only interested in processing the contents of the third field of each line) /etc/group. 
+clean example - cut -d: -f3 /etc/group
+Result - prints only the group number of each group
+if i want to see it in ascending order i will do cut -d: -f3 /etc/group | sort -n. to make it Desc just write sort -rn.
+
+wc - see how many words and characters in a file write it
+

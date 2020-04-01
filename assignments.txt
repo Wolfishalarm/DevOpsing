@@ -1,0 +1,12 @@
+
+
+1. Share the repo with joey github: jmcdice
+2. Add a README file to this repo.
+3. Bash Scripting Course
+4. Find a good IR project for bash scripting (if possible)
+
+Utilities we used today
+1. brew
+2. htop
+3. tmate 
+

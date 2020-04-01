@@ -1,0 +1,18 @@
+man
+apt-get
+apt-get install
+info
+/usr/share/doc
+locate
+~/|.|..
+ls -l | ls -R
+mkdir
+touch
+vim filename
+cp
+rm
+rmdir
+mv
+rm file*(all with this ending) | rm file?(one character after)
+touch "writing like this created one with this name"
+touch blah blah2 blah3 - creates 3 files
