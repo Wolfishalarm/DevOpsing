@@ -1,3 +1,3 @@
-#Bash Project
-In this Repo i'll share my progres in the LPI: "Linux Essentials (010-150)" Pluralsight Course
+#Bash Project -
+In this Repo i'll share my progress in the "LPI: Linux Essentials (010-150)" Pluralsight Course
 WIP...
