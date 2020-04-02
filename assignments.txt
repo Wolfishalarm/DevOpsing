@@ -2,6 +2,7 @@
 
 # Assignments
 - Rename the repo from 'bash' to something good.
+- Take a look at VScode
 - Bash Scripting Course
 - Find a good IR project for bash scripting (if possible)
 - Learn how to sign your git commits.
