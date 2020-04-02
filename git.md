@@ -34,7 +34,7 @@ If you want to see changes along with the commits, (show everything):
   $ git log -p
 ```
 
-## Get a list of all the commits, in short format
+### Get a list of all the commits, in short format
 ```console
   $ git log --pretty=oneline
 ```
