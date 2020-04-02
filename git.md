@@ -4,6 +4,11 @@
  - Don't make too many commits, makes you look unprofessional. Get all right, then commit.
  - Make your commit message short, look for examples in the git log (brief summary).
 
+### Look at your own git settings
+```
+  $ git config -l
+```
+
 ### Clone a repo
 ```console
    $ git clone https://github.com/Wolfishalarm/bash.git
