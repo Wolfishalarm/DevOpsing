@@ -4,6 +4,8 @@
  - Don't make too many commits, makes you look unprofessional. Get all right, then commit.
  - Make your commit message short, look for examples in the git log (brief summary).
 
+## Basics
+
 ### Look at your own git settings
 ```
   $ git config -l
@@ -19,7 +21,13 @@
   $ git remote -v
 ```
 
-## Logs
+### Recurrisively search the repo for a string
+```console
+  $ git grep string
+```
+
+## Looking at Logs
+
 ### Look at the git log for a repo.
 If you want to see changes along with the commits, (show everything):
 ```console
@@ -32,9 +40,9 @@ If you want to see changes along with the commits, (show everything):
 ```
 
 ## Making changes to a repo
-If you make changes to a file in the repo and are happy with it.
-All these commands are against my *local* copy.
+
 ### Flow for checking in chages.
+All these commands are against my *local* copy.
 ```console
   $ git status
   $ git add file1.txt
@@ -45,7 +53,7 @@ All these commands are against my *local* copy.
 
 ### Making commits (never use '-am', this is sloppy).
 ```console
-  $ git -am "THIS IS BAD."
+  $ git commit -am "THIS IS BAD."
 ```
 
 ### Back out the last commit or two.. (*DELETE* preious commits)
@@ -61,16 +69,9 @@ All these commands are against my *local* copy.
   $ git push
 ```
 
-### Recurrisively search the repo for a string
-```console
-  $ git grep string
-```
-
 ## Branching and Merging (advanced)
 
-### When you clone a repo, you're automatically on master.
-
-### Look at the existing branchs
+### Look at the existing branches
 ```console
   $ git branch -a
 ```
@@ -93,9 +94,5 @@ All these commands are against my *local* copy.
   $ git merge feature-name
 ```
 
-## Forking a repo (used to make a pull request)
+## Forking a repo, used to make a pull request (advanced)
 Not really relevant, you should google it.
-
-
-
-
