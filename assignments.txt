@@ -5,6 +5,7 @@
 2. Add a README file to this repo.
 3. Bash Scripting Course
 4. Find a good IR project for bash scripting (if possible)
+5. Learn how to sign your git commits.
 
 # Utilities we used today
 1. brew
