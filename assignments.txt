@@ -10,3 +10,7 @@ Utilities we used today
 2. htop
 3. tmate 
 
+# Tools to Master
+1. vim
+2. git
+3. tmux/tmate
