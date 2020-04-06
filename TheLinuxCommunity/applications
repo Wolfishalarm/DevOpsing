@@ -1,0 +1,5 @@
+Linux Package Managers
+apt-get, dpkg(deb) - Ubuntu, Debian, Mint
+yun, RPM - Red Had, Fedora, Amazon Linux
+
+Software libraries and other dependencies are updated using the Package Manager

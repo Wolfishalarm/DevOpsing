@@ -1,0 +1,23 @@
+ls -a - will display hidden files
+. indicates a file is hidden
+
+non login - The ~/.profile file can be read by non login users, called like that because we are already logged in to our GUI Desktop. if i'll access my account using SSH i would need to login with my account and password. 
+non login shell parameters are contolled by files in the home directory like /home/eran/.profile
+
+Linux is mostly read and write files. commands and object names are case sensitive. 
+
+all Shell variables can be displayed using the "env" command:
+	-SHELL=/bin/bash - USER=eran, Path=key directories i can execute commands and access file from anywhere in the system
+ (env | less - one screen at a time).
+create new variable and assign:
+myval=eight
+echo myval
+bash - creating a new bash
+echo myval - won't work
+exit
+echo myval - now it will work
+if i want to export the variable to all child Shells that might be created i can use the "export command" and the "myval" example will appear everywhere.
+export myval
+echo myval
+
+when pressing "up arrow" it reads my previous commands from the ".bash_history" file with recent 1000 commands

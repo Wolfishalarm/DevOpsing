@@ -1,0 +1,21 @@
+.tar is a tar archive
+gz - compressed using the gzip algorithm
+to unpack we run:
+tar xzf file.tar.gz
+x - we want to extract the files from the archive
+z - it's compressed or zipped
+f - file, means the file name will appear after
+
+to pack:
+tar czf namearchiver.tar.gz folder
+c - create
+z and f like in unpack
+the "folder" that comes after tells it that we want to pack that folder inside
+
+data corruption - happens alot, need to check my archives i created
+
+can create archive directly by:
+tar cf
+    ^ no z - means no compression
+then need to execute gzip or bzip to compress it 
+some things i'll download will be zipped and i get use the zip command after downloading it

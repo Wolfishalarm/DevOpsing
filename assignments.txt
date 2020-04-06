@@ -1,0 +1,18 @@
+
+
+# Assignments
+- Rename the repo from 'bash' to something good.
+- Take a look at VScode
+- Bash Scripting Course
+- Find a good IR project for bash scripting (if possible)
+- Learn how to sign your git commits.
+
+# Utilities we used today
+1. brew
+2. htop
+3. tmate 
+
+# Tools to Master (create an md file for each)
+1. vim
+2. git
+3. tmux/tmate
