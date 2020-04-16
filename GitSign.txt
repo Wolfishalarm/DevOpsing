@@ -1,0 +1,24 @@
+## How to create a GPG key:
+1.Type the command:
+ $ gpg --gen-key
+2.When prompted, type your real name.
+3.When prompted, type the email address you wanted associated with the key.
+4.Okay the information by typing O.
+5.When prompted, type and verify a password for the new keypair.
+-Your key has been generated.
+-If you want to create a new key with more information, you should issue the command:
+ $ gpg --full-generate-key
+
+## How to export your keys
+You might find yourself needing a keypair in the .asc file format. Should that be the case, you can export your private key from the command line. To do that, go back to the terminal window and locate the key you want to export with the command:
+ $ gpg --list-secret-keys
+You should see a list of all of your secret keys. Associated with each listing will be a key ID (a long string of random characters). Copy that string down and then issue the command:
+
+ $ gpg --export-secret-keys ID > my-private-key.asc
+
+To export your public key, issue the command:
+ $ gpg --armor --export ID > my-pubkey.asc
+The above key will export the public key into an asc file. You can then share that public key with whoever requires it.
+
+In GIT.com:
+Go to Settings, then "SSH and GPG keys", Press on "Add new GPG Key" and use what i got in the export, with the beginning and end.
