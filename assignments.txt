@@ -7,6 +7,18 @@
 - Find a good IR project for bash scripting (if possible)
 - Learn how to sign your git commits.
 
+- Create a GCP account (free tier)
+- Create a VPC (you get a default network/subnet, do not use the default, create your own)
+  - Create a Network
+  - Create a Subnet
+  - Create vm-1
+  - Create vm-2
+    - Discover subnet mask
+    - Discover default route 
+  - ping vm-1 and vm-2
+
+
+
 # Utilities we used today
 1. brew
 2. htop
@@ -15,4 +27,6 @@
 # Tools to Master (create an md file for each)
 1. vim
 2. git
-3. tmux/tmate
+3. bash scripting
+4. tmux/tmate
+
