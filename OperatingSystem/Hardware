@@ -1,0 +1,18 @@
+Differences between High-end PC and a fully loaded Server(1U).
+Servers are designed to slight neatly into racks to maximize the number of units that will fit into a limited space, also with enough space between them to maximize the airflow, also they have better cooling fans. Servers come with banks of 3.5 and 2.5 inch slots for hot swapable drives.
+Commands to identify drives:
+df -h(human readable format) - this command will display all the block devices* currently mounted** on your system on your system along with their size and most importantly -THEIR MOUNT POINT(/boot/efi). The Mount is the location on the file system you can find the drive and his contents.
+All devices, Including DVD, USB drives and modems are represented by a file in the "/dev" directory. a file named /dev/sda would be the first data drive read by the system. sda1 would be that drive's first partition and sda2, it's second partition. 
+a file named /dev/sdb would be the second drive on the system.
+If the drive doesn't appear in the output of "df", it might yet have been mounted. to see all block devices attached to your physical system you can run:
+"lsblk" - all attached, even if not mounted.
+To mount a drive using the mount command:
+sudo mount /dev/sdc /media/mydirectory
+/dev/sdc is the name of the file in /dev
+/media/mydirector is the mount directory
+
+
+
+
+*A block device is a computer data storage device that supports reading and (optionally) writing data in fixed-size blocks, sectors, or clusters. These blocks are generally 512 bytes or a multiple thereof in size. The term is often used in contrast with a '''word-addressed device''' which supports reading and writing data a word at a time, where a "word" is a much smaller block, usually 1 to 8 bytes in size.
+**In computing, mount is a command in various operating systems. Before a user can access a file on a Unix-like machine, the file system that contains it needs to be mounted with the mount command. Frequently mount is used for SD card, USB storage, DVD and other removable storage devices.
