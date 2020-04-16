@@ -1,20 +1,9 @@
-$ gpg --list-keys
-/Users/schacon/.gnupg/pubring.gpg
----------------------------------
-pub   2048R/0A46826A 2014-06-04
-uid                  Scott Chacon (Git signing key) <schacon@gmail.com>
-sub   2048R/874529A9 2014-06-04
-If you don’t have a key installed, you can generate one with gpg --gen-key.
 
-$ gpg --gen-key
-Once you have a private key to sign with, you can configure Git to use it for signing things by setting the user.signingkey config setting.
-
-$ git config --global user.signingkey 0A46826A
-Now Git will use your key by default to sign tags and commits if you want.
 
 ## How to create a GPG key:
 1.Type the command:
  $ gpg --gen-key
+    -Once you have a private key to sign with, you can configure Git to use it for signing things by setting the user.signingkey config setting.
 2.When prompted, type your real name.
 3.When prompted, type the email address you wanted associated with the key.
 4.Okay the information by typing O.
@@ -22,6 +11,20 @@ Now Git will use your key by default to sign tags and commits if you want.
 -Your key has been generated.
 -If you want to create a new key with more information, you should issue the command:
  $ gpg --full-generate-key
+
+
+ $ git config --global user.signingkey 0A46826A
+Now Git will use your key by default to sign tags and commits if you want.
+
+To see it:
+ $ gpg --list-keys
+/Users/schacon/.gnupg/pubring.gpg
+---------------------------------
+pub   2048R/0A46826A 2014-06-04
+uid                  Scott Chacon (Git signing key) <schacon@gmail.com>
+sub   2048R/874529A9 2014-06-04
+If you don’t have a key installed, you can generate one with gpg --gen-key.
+
 
 ## How to export your keys
 You might find yourself needing a keypair in the .asc file format. Should that be the case, you can export your private key from the command line. To do that, go back to the terminal window and locate the key you want to export with the command:
@@ -36,3 +39,7 @@ The above key will export the public key into an asc file. You can then share th
 
 In GIT.com:
 Go to Settings, then "SSH and GPG keys", Press on "Add new GPG Key" and use what i got in the export, with the beginning and end.
+
+
+To push a Verified Commit enter:
+ $ git commit -S -m "blah  blah blah"
