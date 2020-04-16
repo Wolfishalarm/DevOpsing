@@ -1,0 +1,32 @@
+Description of running processes location? alot of that is kept within virtual files in the "/proc" directory. Virtual means that they are not persistent, but are created dynamicly with each system boot. The /prod is very messy and contains many files, for that we have the "ps aux" command to ease the search. the ps aux command will print information on every active process. Becasuse there are too many we need to use the | (pipe) and grep.
+Top command presents data of those processes using the highest cpu and memory reousrces.
+free -h(human read) command - will present the used and free RAM.
+
+besides /proc, /sys also contains virtual or "sudo files". rather than processes, sys specializes moslty on HW devices and device drivers. the idea is that if other processes need to know about their physical environment, they can turn to the /sys tree for information. Example of /sys info:
+ $ cd /sys/block 
+ $ ls
+the name(block under sys) suggests that it covers attached block devices like hard drives and USB sticks, listing the contents of the block directory, show's us the names of our hard drives, sda for instance.
+ $ cd /sys/block/sda
+This is a directory, presumably containing some of its metadata. there is a uniqe directory for each of the partitions on sda.
+ $ cd sda1
+there is a file inside named "size", it is the side of the sda1 partition measured in bytes. 
+
+Logs - most logs will appear under /var/log
+the "syslog" file recieves every notification that comes.
+
+dmesg - will display messages relating to the kernel ring buffer*. this command can tell me about how the system understands it's physical environment. 
+
+
+*The kernel ring buffer is a data structure that records messages related to the operation of the kernel. A ring buffer is a special kind of buffer that is always a constant size, removing the oldest messages when new messages come in.
+ 
+
+dpkg -l - This command is to access databases of installed and available programs 
+apt list / yum list all are also availalbe commands on different dists.
+
+the /etc directory contains most of the configuration files for both system like Network manager and third-party software packages like the Apache web server.
+If i'm looking for a configuration file, the odds are that i'll find it in a directory under /etc using some variation of the program's name(/etc/apache2).
+
+The linux bootloader configuration files in a directory within the /boot directory called "grub".
+
+I can make use of temproary data directories to dump data that doesn't have long term value. any files in the /tmp directory will be deleted every time the system reboots. 
+Files that are saved to the /var/tmp are generally more important and won't be deleted on reboot 

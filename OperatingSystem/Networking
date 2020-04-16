@@ -1,0 +1,18 @@
+ip route show - will display the route your system is configured to take to the network.
+
+netstat -r - will display wider categories of network connectivity.
+
+sudo dhclient - will request an IP address from a network DHCP server.
+
+ip addr show - will print your IP address and other connection info.
+
+IPv4: 192.168.0.16 - IPv4 addresses are limitied because the number of devices around the world is only increasing and need more options for addresses.
+IPv6: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
+DNS is simply a database that links meaningful names (known as host names), such as http://www.microsoft.com, to a specific IP address, such as 192.168.124.1. Simply linking addresses to names is just the beginning, though, because DNS has many more features in addition to host-name-to-address mapping.
+
+A DNS name server is a server that stores the DNS records, such as address (A, AAAA) records, name server (NS) records, and mail exchanger (MX) records for a domain name (see also List of DNS record types) and responds with answers to queries against its database.
+
+The /etc/resolv. conf is resolver configuration file for Linux and UNIX like operating systems. It is used to configure dns name servers.
+
+

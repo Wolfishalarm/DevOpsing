@@ -1,0 +1,32 @@
+All desktop operating systems provide two ways to access their tools: 1)Linux Desktop Environment(GUI). 2)Linux Command Line Interface(CLI). all modern OS's allow you to run all "apps" through GUI and giving you the environment where you can devlep your own software, this is mainly what first personal computers could do.
+[--------------------------------------------------------]
+[----------------Third-Party Software--------------------]
+[Linux Desktop Environment | Linux Command Line Interface]
+[----------------------Linux Kernel----------------------]
+[--------------------------------------------------------]
+
+  The Advantages of Free Software
+  -------------------------------
+-You can can use Linux without comercial restrictions
+-Install unlimited instances(install 100 ubuntus)
+-Deploy under flexuble conditions - Customize what works for you best, take HD with Linux file system installed from one computer and move it to another pc and it will work
+-Launch test environments - i can run multiple virtual and physical Linux instances running at a single time(can't buy 10 windows separately just to test something)
+-Discover oppurtunities - discover many distro's 
+
+ Linux Distributions 
+ -------------------
+Linux distrubtions are on heavy development all the time, hence, i got to be updated all the time. Changes to my Linux can happen on three levels:
+
+
+in the Linux Kernel itself, in the Distribution(Ubuntu) and the desktop i'm running(KDE, Gnome, Unity), and in the Third-Party Software i installed.
+Usually i will not get changes for my Linu kernel cuz i'll get the from the "update manager" of my Distribution i have. Some Dist's may decide not to add Critical Kernel fixes for many months.
+Big Dist's like ubuntu are regularly updated with security and feature updates made available almost instantly. the PM supposed to do most things.
+Ubuntu is famous for releasing new stable versions every six months ON THE BUTTON. Every 2-4 years, they release a LTS(Long Term Support) which is very stable and getting upgrades for many years. These versions are the best for complex network servers or web servers.
+
+ Software Development Cycle
+ --------------------------
+Alpha - Missing features, unstable
+Beta(Pre-release) - "Infested" with bugs, Generally available for download, Allows for widespread participation in process
+Full release - Ready for public use
+
+
