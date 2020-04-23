@@ -26,6 +26,10 @@ Update bash GCP project scripts to:
   delete everything - 03-delete-everything.sh
 - Commit everything to GIT
 
+BONUS Assignment (after all the above is working):
+- Create two subnets, then create a single VM on each subnet 
+  and see if you can ping each other.
+
 # Utilities we used today
 1. brew
 2. htop
