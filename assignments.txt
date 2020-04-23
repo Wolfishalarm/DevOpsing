@@ -17,7 +17,14 @@
     - Discover default route 
   - ping vm-1 and vm-2
 
-
+#Thu Apr 23 21:11:30 IDT 2020
+Update bash GCP project scripts to:
+  HINT: Take the gcloud commands from the GCP console
+  create network - 00-create-network.sh
+  create subnet - 01-create-subnet.sh
+  create vm (complete) - 02-create-instance.sh
+  delete everything - 03-delete-everything.sh
+- Commit everything to GIT
 
 # Utilities we used today
 1. brew
