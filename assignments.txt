@@ -26,6 +26,13 @@ Update bash GCP project scripts to:
   delete everything - 03-delete-everything.sh
 - Commit everything to GIT
 
+# Thu Apr 30 21:07:44 IDT 2020
+  Add a firewall rule function to the lib/gcloud-commands.sh library
+  - create a script which will use this function
+  - add a delete firewall rule function
+  - add this to GCP/03-delete-everything.sh
+  Search youtube: - rfc1918 explained
+
 BONUS Assignment (after all the above is working):
 - Create two subnets, then create a single VM on each subnet 
   and see if you can ping each other.
