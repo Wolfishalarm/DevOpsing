@@ -1,0 +1,9 @@
+# GCP or AWS or Azure 
+
+- network: testnet 
+ - firewall-rules: instance-ssh
+ - subnet: testnet-subnet-01 (192...)
+   - VM: instance-2
+ - subnet: testnet-subnet-02 (10 ...)
+   - VM: instance-3
+
