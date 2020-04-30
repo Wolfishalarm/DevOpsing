@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 function create_vm_instance() {
 
@@ -33,20 +33,37 @@ function create_vm_instance() {
 
 function create_network() {
 
+	NETWORK_NAME=$1
+	echo "Creating network named: ${NETWORK_NAME}"
+	gcloud compute --project=rare-gist-275114 networks create ${NETWORK_NAME} \
+	--subnet-mode=auto
 }
 
-function create_subnet() {
 
+function create_subnet() {
+	SUBNET=$1
+	NETWORK=$2
+	RANGE=$3
+	echo "Creating Subnet: ${SUB}, The network to which the subnetwork belongs is: ${NETWORK}, The IP space allocated to this subnetwork in CIDR format is: ${RANGE}"
+	gcloud compute networks subnets create ${SUB}  \
+	--network=${NETWORK} \ 
+	--range=${RANGE}
 }
 
 function delete_vm_instance() {
-
+	INSTANCE=$1
+	echo "Deleting instance: ${INSTANCE}"
+	gcloud compute instances delete ${INSTANCE}
 }
 
 function delete_subnet() {
-
+	SUBNET_NAME=$1
+	echo "Deleting Subnet: ${SUBNET_NAME}"
+	gcloud compute networks subnets delete ${SUBNET_NAME}
 }
 
 function delete_network() {
-
+	NETWORK=$1
+	echo "Deleting Network: ${NETWORK}"
+	gcloud compute networks delete ${NETWORK}
 }
