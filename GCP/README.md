@@ -11,6 +11,9 @@ Creating a simple bash project to create a simple stack in GCP
   $ gcloud compute networks list
   $ gcloud compute networks subnets list
   $ gcloud compute instancs list
+  $ gcloud compute firewall-rules list
+  $ gcloud compute firewall-rules create ...
+  $ gcloud compute firewall-rules delete ...
 ```
 
 ## Bash script naming convention
