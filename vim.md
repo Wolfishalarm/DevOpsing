@@ -7,3 +7,15 @@
   :y4 (yank 4 lines)
   p   (paste)
 ```
+
+### copy or cut and then paste
+```console
+  :y copy
+  dd cut
+  p  paste
+```
+
+### Delete to end of file (you always have 'u')
+```console
+  dG
+```
