@@ -33,6 +33,22 @@ Update bash GCP project scripts to:
   - add this to GCP/03-delete-everything.sh
   Search youtube: - rfc1918 explained
 
+# Thu May 14 19:48:04 IDT 2020
+  - Refactor gcloud scripts, remove any and all hard-coded values. 
+      Except for instance create (too many)
+  - When running delete script, don't ask for confirmations.
+  - Learn to easily switch between gcloud projects.
+  - Take a work problem (gsutil?) that we can iterate on for IR.
+      Try to understand the full idea of what you want the script to do.
+      - start a new file, with the details, notes, etc.
+        IR.md file with details
+
+## Future assignment ideas
+  - Add case statements to delete script, for options to just run 
+    a single function, based on commandline options.
+
+      $ ./delete-everything --firewall
+
 BONUS Assignment (after all the above is working):
 - Create two subnets, then create a single VM on each subnet 
   and see if you can ping each other.
