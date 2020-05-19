@@ -8,7 +8,7 @@ function create_vm_instance() {
 
   echo "Starting VM: ${MACHINE_NAME} on subnet ${SUBNET_NAME} with a ${DISK_SIZE} root disk."
 
-  gcloud beta compute --project=rare-gist-275114 instances create ${MACHINE_NAME} \
+  gcloud beta compute instances create ${MACHINE_NAME} \
   --zone=us-central1-a \
   --machine-type=n1-standard-1 \
   --subnet=${SUBNET_NAME} \
@@ -33,7 +33,7 @@ function create_network() {
 
 	NETWORK_NAME=$1
 	echo "Creating network named: ${NETWORK_NAME}"
-	gcloud compute --project=rare-gist-275114 networks create ${NETWORK_NAME} 
+	gcloud -q compute networks create ${NETWORK_NAME} 
 }
 
 
@@ -66,4 +66,33 @@ function delete_network() {
 	NETWORK=$1
 	echo "Deleting Network: ${NETWORK}"
 	gcloud --quiet compute networks delete ${NETWORK}
+}
+
+function firewall_rule() {
+	RULE_NAME=$1
+	DIRECTION=$2
+	PRIORITY=$3
+	NETWORK=$4
+	ACTION=$5
+	RULES=$6
+
+	echo "Creating a Firewall rule named ${RULE_NAME}"
+	echo "with diretion of ${DIRECTION}"
+	echo "and Priority of ${PRIORITY}" 
+	echo "On Network ${NETWORK}"
+        echo "Action is ${ACTION} with rules of ${RULES}"
+	
+	gcloud compute firewall-rules create ${RULE_NAME} \
+          --direction=${DIRECTION} \
+          --priority=${PRIORITY} \
+          --network=${NETWORK} \
+          --action=${ACTION} \
+          --rules=${RULES}
+
+}
+
+function delete_firewall_rule() {
+	NAME=$1
+	echo "Deleting Firewall rule ${NAME}"
+	gcloud --quiet compute firewall-rules delete ${NAME}
 }
