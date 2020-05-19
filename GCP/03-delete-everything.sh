@@ -14,4 +14,7 @@ delete_vm_instance 'instance-2' 'us-central1-a'
 delete_subnet 'testnet-subnet-01' 
 delete_subnet 'testnet-subnet-02' 
 
+delete_firewall_rule 'instance-ssh'
 delete_network 'testnet'
+
+delete_firewall_rule 'instance-ssh'
