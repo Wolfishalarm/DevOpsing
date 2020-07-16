@@ -1,0 +1,13 @@
+
+1. understand how to depoy to k8s
+   - Done
+2. Build a docker container for our application. 
+   - In progress
+3. Deploy docker to k8s
+4. Run the tests against elliq-server
+5. Build a pipeline to automate this in Jenkins
+
+
+
+STT Client Docker (we will build this)
+STT Server Docker (we have this)
